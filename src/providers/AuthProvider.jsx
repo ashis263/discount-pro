@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useRef, useState } from "react";
 import app from "../firebase/firebase.config";
 import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from "firebase/auth";
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,6 +9,7 @@ export const AuthContext = createContext();
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
+    const emailRef = useRef();
     const auth = getAuth(app)
     const provider = new GoogleAuthProvider();
     const handleGoogleSignin = () => {
@@ -28,7 +29,8 @@ const AuthProvider = ({children}) => {
         user,
         setUser,
         auth,
-        isLoading
+        isLoading,
+        emailRef
     }
     return (
         <AuthContext.Provider value={authData}>

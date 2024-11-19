@@ -8,7 +8,7 @@ import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 
 
 const Login = () => {
-    const { handleGoogleSignin, setUser, auth } = useContext(AuthContext);
+    const { handleGoogleSignin, setUser, auth, emailRef } = useContext(AuthContext);
     const navigate = useNavigate();
     const [isPassShowing, setIsPassShowing] = useState(false);
     const handleShowPass = () => setIsPassShowing(!isPassShowing);
@@ -92,7 +92,7 @@ const Login = () => {
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input type="email" name="email" placeholder="Email" className="input input-bordered" required />
+                            <input type="email" name="email" ref={emailRef} placeholder="Email" className="input input-bordered" required />
                         </div>
                         <div className="form-control relative">
                             <label className="label">
