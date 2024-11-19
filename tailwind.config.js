@@ -7,7 +7,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        funnelSans: "Funnel Sans",
+        oldenburg: "Oldenburg",
+        poppins: "Poppins"
+      },
+      colors: {
+        primary: "#3e6985",
+        textPrimary: "#0d2730"
       }
     },
   },
