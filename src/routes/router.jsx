@@ -7,6 +7,7 @@ import ErrorPage from '../pages/ErrorPage/ErrorPage'
 import Profile from "../components/Profile/Profile";
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
 import PrivateRoute from "./PrivateRoute";
+import About from "../components/About/About";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: "/update",
                 element: <UpdateProfile></UpdateProfile>
+            },
+            {
+                path: "/about",
+                element: <About></About>
             }
         ]
     },
