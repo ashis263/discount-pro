@@ -12,7 +12,7 @@ import { HiOutlineLogout } from "react-icons/hi";
 import logo from '../../assets/logo.png'
 
 const Navbar = () => {
-    const { user, auth, isLoading } = useContext(AuthContext);
+    const { user, auth } = useContext(AuthContext);
     const navLinks = <>
         <NavLink to='/' className="flex items-center gap-1"><TbHome />
             Home</NavLink>
@@ -22,11 +22,6 @@ const Navbar = () => {
     </>
     const handleLogOut = () => {
         signOut(auth);
-    }
-    if (isLoading) {
-        return <div className="flex justify-center items-center h-svh">
-            <span className="loading loading-bars flex justify-center loading-lg"></span>
-        </div>
     }
     return (
         <div className="navbar w-11/12 mx-auto py-1 sm:py-3">
