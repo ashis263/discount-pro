@@ -1,0 +1,221 @@
+[
+    {
+      "id": "f3j8k9l2pq",
+      "brandName": "Daraz",
+      "rating": 4.5,
+      "description": "Bangladesh's leading online marketplace offering a wide range of products with discounts.",
+      "brandLogo": "https://basis.org.bd/public/images/logo/3847d1361a24da5406507aa96b7b194e23012022014400.png",
+      "coupons": [
+        {
+          "coupon-code": "daraz10",
+          "description": "Get 10% off on all products.",
+          "expiry-date": "2024-12-31",
+          "condition": "Minimum purchase of BDT 1000.",
+          "coupon_type": "Percentage"
+        },
+        {
+          "coupon-code": "freeship",
+          "description": "Enjoy free shipping on orders over BDT 500.",
+          "expiry-date": "2024-11-30",
+          "condition": "Applicable only for standard shipping.",
+          "coupon_type": "Free Shipping"
+        }
+      ],
+      "shopLink": "https://www.daraz.com.bd",
+      "category": "Marketplace",
+      "isSaleOn": true
+    },
+    {
+      "id": "a9x7y2m3wl",
+      "brandName": "Chaldal",
+      "rating": 4.3,
+      "description": "Online grocery store providing fresh groceries and household essentials.",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/en/d/de/Chaldal.com_logo.png",
+      "coupons": [
+        {
+          "coupon-code": "firstbuy",
+          "description": "15% off on your first purchase.",
+          "expiry-date": "2024-12-31",
+          "condition": "For new users only.",
+          "coupon_type": "Percentage"
+        },
+        {
+          "coupon-code": "save50",
+          "description": "BDT 50 off on orders above BDT 1000.",
+          "expiry-date": "2024-11-25",
+          "condition": "Not valid with other promotions.",
+          "coupon_type": "Flat Discount"
+        }
+      ],
+      "shopLink": "https://www.chaldal.com",
+      "category": "Grocery",
+      "isSaleOn": false
+    },
+    {
+      "id": "w4k9t6b2mf",
+      "brandName": "Pickaboo",
+      "rating": 4.1,
+      "description": "Electronics and gadgets e-commerce platform with exclusive deals.",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Pickaboo.png",
+      "coupons": [
+        {
+          "coupon-code": "tech20",
+          "description": "20% off on electronics.",
+          "expiry-date": "2024-11-30",
+          "condition": "Maximum discount BDT 5000.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shopLink": "https://www.pickaboo.com",
+      "category": "Electronics",
+      "isSaleOn": true
+    },
+    {
+      "id": "q9j4b3w7kp",
+      "brandName": "Shajgoj",
+      "rating": 4.6,
+      "description": "Leading online store for beauty and skincare products in Bangladesh.",
+      "brandLogo": "https://sturgeoncapital.com/wp-content/uploads/2023/06/shajgoj.jpg",
+      "coupons": [
+        {
+          "coupon-code": "beauty15",
+          "description": "15% off on all skincare products.",
+          "expiry-date": "2024-12-15",
+          "condition": "Minimum purchase of BDT 2000.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shopLink": "https://www.shajgoj.com",
+      "category": "Beauty & Skincare",
+      "isSaleOn": false
+    },
+    {
+      "id": "p6x9m2j7wl",
+      "brandName": "Foodpanda",
+      "rating": 4.4,
+      "description": "Food delivery service offering discounts from various restaurants.",
+      "brandLogo": "https://intellect.co/wp-content/uploads/2022/05/Foodpanda-Logo.wine_.png",
+      "coupons": [
+        {
+          "coupon-code": "panda50",
+          "description": "50% off on your first order.",
+          "expiry-date": "2024-12-31",
+          "condition": "Maximum discount BDT 200.",
+          "coupon_type": "Percentage"
+        },
+        {
+          "coupon-code": "freemeal",
+          "description": "Get a free meal on orders above BDT 1000.",
+          "expiry-date": "2024-11-30",
+          "condition": "Applicable for selected restaurants.",
+          "coupon_type": "Flat Discount"
+        }
+      ],
+      "shopLink": "https://www.foodpanda.com.bd",
+      "category": "Food Delivery",
+      "isSaleOn": true
+    },
+    {
+      "id": "m8z3y6w2jp",
+      "brandName": "Ajkerdeal",
+      "rating": 4.0,
+      "description": "E-commerce platform offering deals on a variety of products.",
+      "brandLogo": "https://play-lh.googleusercontent.com/pseoHC0hf2ffDcdeNlojvrr0jTQKxrz_1UoU10FQHmmNwGgVwnxVBZTUK4x2cewvMBg",
+      "coupons": [
+        {
+          "coupon-code": "deal20",
+          "description": "20% off on selected items.",
+          "expiry-date": "2024-11-30",
+          "condition": "Minimum purchase BDT 500.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shopLink": "https://www.ajkerdeal.com",
+      "category": "Marketplace",
+      "isSaleOn": true
+    },
+    {
+      "id": "z2m9x4y7wb",
+      "brandName": "Rokomari",
+      "rating": 4.7,
+      "description": "Bangladesh's leading online bookstore.",
+      "brandLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKKjlK0LUs6QyQoB2tRd7OLih_bLQbRHTdhw&s",
+      "coupons": [
+        {
+          "coupon-code": "booklover",
+          "description": "10% off on all books.",
+          "expiry-date": "2024-12-31",
+          "condition": "Maximum discount BDT 300.",
+          "coupon_type": "Percentage"
+        },
+        {
+          "coupon-code": "freeship",
+          "description": "Free shipping on orders over BDT 1000.",
+          "expiry-date": "2024-11-30",
+          "condition": "Valid for domestic orders only.",
+          "coupon_type": "Free Shipping"
+        }
+      ],
+      "shopLink": "https://www.rokomari.com",
+      "category": "Books",
+      "isSaleOn": true
+    },
+    {
+      "id": "l7p3x9z6qw",
+      "brandName": "Pathao",
+      "rating": 4.3,
+      "description": "Ridesharing and delivery platform in Bangladesh.",
+      "brandLogo": "https://futurestartup.b-cdn.net/wp-content/uploads/2021/03/Pathao-Logo-cover.jpg",
+      "coupons": [
+        {
+          "coupon-code": "ridenow",
+          "description": "15% off on your next ride.",
+          "expiry-date": "2024-12-31",
+          "condition": "Maximum discount BDT 50.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shopLink": "https://www.pathao.com",
+      "category": "Transportation",
+      "isSaleOn": true
+    },
+    {
+      "id": "x2m9b7z4jp",
+      "brandName": "Hungrynaki",
+      "rating": 4.2,
+      "description": "Food delivery platform with exclusive deals from top restaurants.",
+      "brandLogo": "https://cdn.bdnews24.com/bdnews24/media/bdnews24-english/2022-07/f408ec11-f357-4cdf-b010-5ab244ecaa7b/hungrynaki_logo_240722_01.jpg",
+      "coupons": [
+        {
+          "coupon-code": "hungry30",
+          "description": "30% off on your order.",
+          "expiry-date": "2024-12-15",
+          "condition": "Maximum discount BDT 300.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shopLink": "https://www.hungrynaki.com",
+      "category": "Food Delivery",
+      "isSaleOn": false
+    },
+    {
+      "id": "q9x7p3w2mj",
+      "brandName": "Evaly",
+      "rating": 3.8,
+      "description": "Marketplace offering deals across various categories.",
+      "brandLogo": "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2021/09/20/evaly_0.jpg",
+      "coupons": [
+        {
+          "coupon-code": "evaly50",
+          "description": "Flat 50 BDT off on orders above BDT 500.",
+          "expiry-date": "2024-12-31",
+          "condition": "Not applicable with other offers.",
+          "coupon_type": "Flat Discount"
+        }
+      ],
+      "shopLink": "https://www.evaly.com.bd",
+      "category": "Marketplace",
+      "isSaleOn": true
+    }
+  ]
+  

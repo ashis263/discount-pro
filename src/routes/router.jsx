@@ -8,6 +8,7 @@ import Profile from "../components/Profile/Profile";
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
 import PrivateRoute from "./PrivateRoute";
 import About from "../components/About/About";
+import Brands from "../components/Brands/Brands";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             {
                 path: "/about",
                 element: <About></About>
+            },
+            {
+                path: "/brands",
+                element: <Brands></Brands>
             }
         ]
     },
