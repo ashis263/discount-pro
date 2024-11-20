@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <div>
             {
-                user && <div className={`text-center pt-5 text-secondary font-bold ${location.pathname === '/' ? '' : 'hidden'}`}>
+                user && <div className={`text-center py-2 text-secondary font-bold shadow-sm ${location.pathname === '/' ? '' : 'hidden'}`}>
                     <h3 className="animate__animated animate__zoomIn">Welcome, {user.displayName}</h3>
                 </div>
             }

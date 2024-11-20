@@ -4,6 +4,7 @@ import Register from '../pages/Register/Register'
 import Login from '../pages/Login/Login'
 import PasswordReset from '../pages/PasswordReset/PasswordReset'
 import Profile from "../components/Profile/Profile";
+import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
 
 const router = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
             {
                 path: "/profile",
                 element: <Profile></Profile>
+            },
+            {
+                path: "/update",
+                element: <UpdateProfile></UpdateProfile>
             }
         ]
     },
