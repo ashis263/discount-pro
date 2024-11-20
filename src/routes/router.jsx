@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout";
 import Register from '../pages/Register/Register'
 import Login from '../pages/Login/Login'
 import PasswordReset from '../pages/PasswordReset/PasswordReset'
+import ErrorPage from '../pages/ErrorPage/ErrorPage'
 import Profile from "../components/Profile/Profile";
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
 import PrivateRoute from "./PrivateRoute";
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/profile",

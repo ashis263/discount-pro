@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Header from "../components/Header/Header";
 import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
+import Footer from "../components/Footer/Footer";
 
 const MainLayout = () => {
     const { isLoading } = useContext(AuthContext);
@@ -18,6 +19,9 @@ const MainLayout = () => {
             <main>
                 <Outlet></Outlet>
             </main>
+            <footer>
+                <Footer></Footer>
+            </footer>
         </div>
     );
 }

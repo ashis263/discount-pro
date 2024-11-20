@@ -24,7 +24,7 @@ const Navbar = () => {
         signOut(auth);
     }
     return (
-        <div className="shadow-sm">
+        <div className="shadow-sm mb-[1px]">
         <div className="navbar w-11/12 mx-auto py-1 sm:py-3">
             <div className="navbar-start">
                 <div className="dropdown">
