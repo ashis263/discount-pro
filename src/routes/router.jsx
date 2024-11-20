@@ -5,6 +5,7 @@ import Login from '../pages/Login/Login'
 import PasswordReset from '../pages/PasswordReset/PasswordReset'
 import Profile from "../components/Profile/Profile";
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/profile",
-                element: <Profile></Profile>
+                element: <PrivateRoute><Profile></Profile></PrivateRoute>
             },
             {
                 path: "/update",

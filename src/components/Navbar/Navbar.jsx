@@ -17,7 +17,7 @@ const Navbar = () => {
         <NavLink to='/' className="flex items-center gap-1"><TbHome />
             Home</NavLink>
         <NavLink to='/brands' className="flex items-center gap-1"><MdOutlineExplore />Brands</NavLink>
-        <NavLink to='/profile' className="flex items-center gap-1"><BsPersonVcard className="text-xs" />My Profile</NavLink>
+        <NavLink to='/profile' className={!user ? 'hidden' : 'flex items-center gap-1'}><BsPersonVcard className="text-xs" />My Profile</NavLink>
         <NavLink to='/about' className="flex items-center gap-1"><FaLaptopCode className="text-xs" />About Dev</NavLink>
     </>
     const handleLogOut = () => {

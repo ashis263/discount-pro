@@ -1,5 +1,5 @@
 import { IoLogoGoogle } from "react-icons/io";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import { useContext, useState } from "react";
@@ -10,6 +10,7 @@ import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 const Login = () => {
     const { handleGoogleSignin, setUser, auth, emailRef } = useContext(AuthContext);
     const navigate = useNavigate();
+    const location = useLocation();
     const [isPassShowing, setIsPassShowing] = useState(false);
     const handleShowPass = () => setIsPassShowing(!isPassShowing);
     const handleGoogleClick = () => {
@@ -27,7 +28,7 @@ const Login = () => {
                     transition: Bounce,
                 });
                 setUser(result.user);
-                setTimeout(() => navigate('/'), 2000);
+                setTimeout(() => location.state ? navigate(location.state) : navigate('/'), 2000);
             })
             .catch(error => {
                 toast.error(`Error: ${error.code}!`, {
