@@ -9,7 +9,10 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 const BrandDetails = () => {
     const coupons = useContext(CouponContext);
     const { id } = useParams();
-    const brand = coupons.find(coupon => coupon.id === id);
+    let brand;
+    if(coupons){
+        brand = coupons.find(coupon => coupon.id === id);
+    }
     const rating = {
         size: 30,
         value: brand.rating,
@@ -36,7 +39,7 @@ const BrandDetails = () => {
                     <h3 className="text-primary w-2/3 lg:w-1/2 mx-auto text-xl sm:text-2xl font-bold text-center">Available Coupons</h3>
                     <div className="p-5 sm:p-10 mx-auto w-11/12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
                         {
-                            brand.coupons.map(coupon => <Coupon key={"coupon-code"} shopLink={brand.shopLink} coupon={coupon}></Coupon>)
+                            brand && brand.coupons.map(coupon => <Coupon key={"coupon-code"} shopLink={brand.shopLink} coupon={coupon}></Coupon>)
                         }
                     </div>
                 </div>

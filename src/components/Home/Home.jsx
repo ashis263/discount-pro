@@ -15,7 +15,7 @@ const Home = () => {
         <div>
             <HelmetProvider>
                 <Helmet>
-                    <title>Home</title>
+                    <title>Discount Pro</title>
                 </Helmet>
             <Banner></Banner>
             <div  className="w-11/12 mx-auto">
@@ -23,7 +23,7 @@ const Home = () => {
                     <h4 className="text-xl sm:text-2xl w-1/5 bg-slate-500 rounded-l text-white font-medium text-center p-2">All Brands</h4>
                     <Marquee pauseOnHover className="bg-gray-100 rounded-r">
                         {
-                            coupons.map(coupon => <img onClick={() => navigate(`/brand/${coupon.id}`)} className="w-28 h-10 mr-10 rounded bg-white" key={coupon.id} src={coupon.brandLogo}></img>)
+                           coupons && coupons.map(coupon => <img onClick={() => navigate(`/brand/${coupon.id}`)} className="w-28 h-10 mr-10 rounded bg-white" key={coupon.id} src={coupon.brandLogo}></img>)
                         }
                     </Marquee>
                 </div>

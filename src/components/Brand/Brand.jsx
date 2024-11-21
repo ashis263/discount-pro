@@ -9,7 +9,10 @@ import { useNavigate } from 'react-router-dom';
 const Brand = (brand) => {
     const navigate = useNavigate();
     const coupons = useContext(CouponContext);
-    const brandData = coupons.find(coupon => coupon.brandName === brand.brand);
+    let brandData;
+    if(coupons){
+        brandData = coupons.find(coupon => coupon.brandName === brand.brand);
+    }
     const rating = {
         size: 18,
         value: brandData.rating,

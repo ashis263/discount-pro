@@ -40,7 +40,7 @@ const Brands = () => {
                 <div className="py-5 sm:py-10 flex gap-10 w-11/12 mx-auto">
                     <section className="w-11/12 mx-auto sm:w-2/3 lg:3/5 space-y-5">
                         {
-                            brands.map(brand => <Brand key={brand} brand={brand}></Brand>)
+                            brands && brands.map(brand => <Brand key={brand} brand={brand}></Brand>)
                         }
                     </section>
                 </div>
