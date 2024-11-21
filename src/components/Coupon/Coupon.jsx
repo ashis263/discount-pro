@@ -43,7 +43,8 @@ const Coupon = ({ coupon, shopLink }) => {
 };
 
 Coupon.propTypes = {
-    coupon: PropTypes.object.isRequired
+    coupon: PropTypes.object.isRequired,
+    shopLink: PropTypes.string.isRequired
 }
 
 export default Coupon;
