@@ -3,9 +3,11 @@ import { useContext } from "react";
 import { CouponContext } from "../../providers/AuthProvider";
 import ReactStars from "react-rating-stars-component";
 import 'animate.css'
+import { useNavigate } from 'react-router-dom';
 
 
 const Brand = (brand) => {
+    const navigate = useNavigate();
     const coupons = useContext(CouponContext);
     const brandData = coupons.find(coupon => coupon.brandName === brand.brand);
     const rating = {
@@ -26,7 +28,7 @@ const Brand = (brand) => {
                 <p className="text-xs text-gray-500">{brandData.description}</p>
             </div>
             <div>
-                <button onClick="" className="btn btn-sm hover:bg-primary bg-primary text-white">View coupons</button>
+                <button onClick={() => navigate(`/brand/${brandData.id}`)} className="btn btn-sm hover:bg-primary bg-primary text-white">View coupons</button>
                 <h3 className={brandData.isSaleOn ? "text-red-500 font-bold text-center sm:text-xl pt-7 animate__animated animate__bounce animate__infinite animate__slow" : 'hidden'}>Sale is on</h3>
             </div>
         </div>

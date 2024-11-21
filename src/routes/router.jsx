@@ -9,6 +9,7 @@ import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
 import PrivateRoute from "./PrivateRoute";
 import About from "../components/About/About";
 import Brands from "../components/Brands/Brands";
+import BrandDetails from "../components/BrandDetails/BrandDetails";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
             {
                 path: "/brands",
                 element: <Brands></Brands>
+            },
+            {
+                path: "brand/:id",
+                element: <PrivateRoute><BrandDetails></BrandDetails></PrivateRoute>
             }
         ]
     },
