@@ -10,6 +10,7 @@ import PrivateRoute from "./PrivateRoute";
 import About from "../components/About/About";
 import Brands from "../components/Brands/Brands";
 import BrandDetails from "../components/BrandDetails/BrandDetails";
+import Home from "../components/Home/Home";
 
 const router = createBrowserRouter([
     {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
         element: <MainLayout></MainLayout>,
         errorElement: <ErrorPage></ErrorPage>,
         children: [
+            {
+                path:"/",
+                element: <Home></Home>
+            },
             {
                 path: "/profile",
                 element: <PrivateRoute><Profile></Profile></PrivateRoute>
