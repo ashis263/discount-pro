@@ -6,6 +6,7 @@ import { useContext, useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth/cordova";
 import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 import 'animate.css';
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 
 const Login = () => {
@@ -82,6 +83,10 @@ const Login = () => {
     }
     return (
         <div className="flex flex-col items-center p-10 animate__animated animate__fadeIn">
+            <HelmetProvider>
+                <Helmet>
+                    <title>Login</title>
+                </Helmet>
             <h1 className="text-5xl sm:text-6xl font-bold py-5 sm:py-10 text-primary">Login</h1>
             <div className="w-full sm:w-1/2 lg:w-2/5 rounded-xl bg-gray-50 p-10 shadow-lg">
                 <div className="flex justify-center">
@@ -108,7 +113,7 @@ const Login = () => {
                             </div>
                             <label className="label flext flex-col items-start gap-1 sm:gap-2">
                                 <p>Forgot password? <Link to="/resetpass" className="font-semibold text-sky-600">Reset here</Link></p>
-                                <p>Don&apos;t have an account? <Link to="/register" className="font-semibold text-sky-600">Register</Link></p>
+                                <p>Don&apos;t have an account? <Link to="/register" className="font-semibold text-sky-600">Registration</Link></p>
                             </label>
                         </div>
                         <div className="form-control mt-6">
@@ -118,6 +123,7 @@ const Login = () => {
                 </div>
             </div>
             <ToastContainer />
+            </HelmetProvider>
         </div>
     );
 }

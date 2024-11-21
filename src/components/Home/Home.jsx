@@ -6,13 +6,17 @@ import { useContext } from "react";
 import { CouponContext } from "../../providers/AuthProvider";
 import BrandsOnSale from "../BrandsOnSale/BrandsOnSale";
 import BrandsByCategory from "../BrandsByCategory/BrandsByCategory";
-import Newsletter from "../Newsletter/Newsletter";
+import Newsletter from "../Newsletter/Newsletter";import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Home = () => {
     const navigate = useNavigate()
     const coupons = useContext(CouponContext);
     return (
         <div>
+            <HelmetProvider>
+                <Helmet>
+                    <title>Home</title>
+                </Helmet>
             <Banner></Banner>
             <div  className="w-11/12 mx-auto">
                 <div className="pt-5 sm:pt-10 flex">
@@ -34,6 +38,7 @@ const Home = () => {
                 <hr />
                 <br />
             </div>
+            </HelmetProvider>
         </div>
     );
 };

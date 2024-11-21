@@ -3,6 +3,8 @@ import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import { AuthContext } from '../../providers/AuthProvider';
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import 'animate.css';
 
 const UpdateProfile = () => {
     const navigate = useNavigate();
@@ -41,7 +43,11 @@ const UpdateProfile = () => {
             })
     }
     return (
-        <div className="flex flex-col items-center pt-5">
+        <div className="flex flex-col items-center pt-5  animate__animated animate__fadeIn">
+            <HelmetProvider>
+                <Helmet>
+                    <title>Update Profile</title>
+                </Helmet>
             <h1 className="text-5xl sm:text-6xl font-bold py-5 text-primary">Update Profile</h1>
             <div className="w-full sm:w-1/2 lg:w-2/5 rounded-xl bg-gray-50 p-10 shadow-lg">
                 <form onSubmit={handleFormSubmit} className="">
@@ -63,6 +69,7 @@ const UpdateProfile = () => {
                 </form>
             </div>
             <ToastContainer />
+            </HelmetProvider>
         </div>
     );
 }
