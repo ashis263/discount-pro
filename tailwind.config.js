@@ -14,6 +14,9 @@ export default {
         primary: "#3e6985",
         secondary: "#c6494c",
         textPrimary: "#0d2730"
+      },
+      backgroundImage: {
+        bg: "url(../src/assets/bg.svg)"
       }
     },
   },

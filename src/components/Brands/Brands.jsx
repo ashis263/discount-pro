@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CouponContext } from "../../providers/AuthProvider";
 import Brand from "../Brand/Brand";
+import 'animate.css';
 
 const Brands = () => {
     const  coupons  = useContext(CouponContext);
@@ -13,8 +14,8 @@ const Brands = () => {
         });
     }
     return (
-        <div>
-            <div className="bg-primary py-5 sm:py-10 space-y-3 text-gray-200 text-center">
+        <div className="animate__animated animate__fadeIn">
+            <div className="bg-bg py-5 sm:py-10 space-y-3 text-gray-200 text-center">
                 <h3 className="w-2/3 lg:w-1/2 mx-auto text-2xl sm:text-4xl font-bold">Brands</h3>
                 <p className="w-2/3 lg:w-1/2 mx-auto text-gray-300">Browse, collect and redeem exclusive coupons from different brands.</p>
                 <label className="w-1/2 mx-auto input input-sm lg:input-md input-bordered flex items-center gap-2">

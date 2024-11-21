@@ -12,8 +12,8 @@ import slider5 from '../../assets/slider/5.jpg'
 const Banner = () => {
     const { user } = useContext(AuthContext);
     return (
-        <div className="animate__animated animate__fadeInDown">
-            <div className="bg-primary py-5 sm:py-10 space-y-3 text-gray-200 text-center">
+        <div className="animate__animated animate__fadeIn">
+            <div className="bg-[#0e2a47] py-5 sm:py-10 space-y-3 text-gray-200 text-center">
                 <h3 className="animate__animated animate__zoomIn w-2/3 lg:w-1/2 mx-auto text-2xl sm:text-4xl font-bold">Welcome{`${user ? ', ' + user.displayName : ''}`}</h3>
                 <p className="w-2/3 lg:w-1/2 mx-auto text-gray-300 pb-5 sm:pb-10">Your journey to amazing deals and savings starts here! Collect, browse, and redeem exclusive coupons for your favorite brands.</p>
                 <Carousel className="w-4/5 sm:w-1/2 mx-auto rounded-2xl text-center bg-white shadow-lg" showStatus="" showThumbs="" infiniteLoop autoPlay>

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { sendPasswordResetEmail, signOut } from "firebase/auth";
 import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'animate.css';
 
 const PasswordReset = () => {
     const {auth, emailRef} = useContext(AuthContext);
@@ -39,7 +40,7 @@ const PasswordReset = () => {
         })
     }
     return (
-        <div className="flex flex-col items-center p-10">
+        <div className="flex flex-col items-center p-10 animate__animated animate__fadeIn">
             <h1 className="text-5xl text-center sm:text-6xl font-bold py-5 sm:py-10 text-primary">Reset Password</h1>
             <div className="w-full sm:w-1/2 lg:w-2/5 rounded-xl bg-gray-50 p-10 shadow-lg">
                 <form onSubmit={handleFormSubmit} className="">

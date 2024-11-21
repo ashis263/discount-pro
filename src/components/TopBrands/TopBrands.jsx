@@ -8,7 +8,7 @@ const TopBrands = () => {
     const coupons = useContext(CouponContext);
     const tops = coupons.filter(coupon => coupon.rating > 4)
     return (
-        <div className="py-5 sm:py-10 sm:w-3/5 lg:w-[70%] xl:w-3/4">
+        <div>
             <h3 className="mb-2 rounded-xl sm:mb-5 text-xl sm:text-2xl font-bold text-center sm:text-start">Top Brands</h3>
             <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 py-5 sm:py-10 bg-gray-100 rounded-xl">
                 {

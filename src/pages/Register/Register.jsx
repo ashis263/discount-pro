@@ -5,6 +5,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { IoIosEye, IoIosEyeOff } from "react-icons/io";
+import 'animate.css';
 
 
 const Register = () => {
@@ -125,7 +126,7 @@ const Register = () => {
     }
     const handleShowPass = () => setIsPassShowing(!isPassShowing);
     return (
-        <div className="flex flex-col items-center pt-5">
+        <div className="flex flex-col items-center pt-5 animate__animated animate__fadeIn">
             <h1 className="text-5xl sm:text-6xl font-bold py-5 text-primary">Register</h1>
             <div className="w-full sm:w-1/2 lg:w-2/5 rounded-xl bg-gray-50 p-10 shadow-lg">
                 <div className="flex justify-center">
